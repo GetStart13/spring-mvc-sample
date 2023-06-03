@@ -11,10 +11,11 @@
         <init-param>
             <!-- 配置应用程序上下文，contextConfigLocation 这个名字不能改 -->
             <param-name>contextConfigLocation</param-name>
-            <param-value>/WEB-INF/applicationContext-servlet.xml</param-value>
+            <param-value>classpath:/applicationContext-servlet.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    <!-- 请求分发器 -->
     <servlet-mapping>
         <servlet-name>DispatcherServlet</servlet-name>
         <url-pattern>/</url-pattern>
